@@ -28,7 +28,7 @@ jobs:
         uses: actions/cache@v3
         with:
           path: ~/.m2
-          key: ${{ runner.os }}-m2-${{ hashFiles('**/sonarqube-scanner-maven/maven-basic/pom.xml') }}
+          key: ${{ runner.os }}-m2-${{ hashFiles('**/sonar-scanning-examples/sonarqube-scanner-maven/maven-basic/pom.xml') }}
           restore-keys: ${{ runner.os }}-m2
       - name: Build and analyze
         env:
